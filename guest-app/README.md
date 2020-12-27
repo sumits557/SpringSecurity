@@ -6,3 +6,4 @@ Spring Security concepts
 - JDBC authentication (In this we removed the user credentials from the code and authenticating from DB).
 - Leveraging bcrypt for hashing.
 - Authorization
+- Form-based authentication, Introduced html login-logout page.
