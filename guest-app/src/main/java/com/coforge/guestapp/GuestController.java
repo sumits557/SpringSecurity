@@ -28,13 +28,13 @@ public class GuestController {
     }
 
     @GetMapping(value={"/", "/index"})
-    public String getHomePage(Model model){
+    public String getHomePage(Model model) {
 
         return "index";
     }
 
     @GetMapping(value="/guests")
-    public String getGuests(Model model){
+    public String getGuests(Model model) {
         List<Guest> guests = this.guestService.getAllGuests();
         model.addAttribute("guests", guests);
         return "guests-view";
@@ -46,7 +46,7 @@ public class GuestController {
     }
 
     @PostMapping(value="/guests")
-    public ModelAndView addGuest(HttpServletRequest request, Model model, @ModelAttribute GuestModel guestModel){
+    public ModelAndView addGuest(HttpServletRequest request, Model model, @ModelAttribute GuestModel guestModel) {
         Guest guest = this.guestService.addGuest(guestModel);
         model.addAttribute("guest", guest);
         request.setAttribute(View.RESPONSE_STATUS_ATTRIBUTE, HttpStatus.TEMPORARY_REDIRECT);
@@ -54,14 +54,14 @@ public class GuestController {
     }
 
     @GetMapping(value="/guests/{id}")
-    public String getGuest(Model model, @PathVariable long id){
+    public String getGuest(Model model, @PathVariable long id) {
         Guest guest = this.guestService.getGuest(id);
         model.addAttribute("guest", guest);
         return "guest-view";
     }
 
     @PostMapping(value="/guests/{id}")
-    public String updateGuest(Model model, @PathVariable long id, @ModelAttribute GuestModel guestModel){
+    public String updateGuest(Model model, @PathVariable long id, @ModelAttribute GuestModel guestModel) {
         Guest guest = this.guestService.updateGuest(id, guestModel);
         model.addAttribute("guest", guest);
         model.addAttribute("guestModel", new GuestModel());

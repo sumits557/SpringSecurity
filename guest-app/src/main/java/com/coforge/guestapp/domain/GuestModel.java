@@ -68,7 +68,7 @@ public class GuestModel {
         this.phoneNumber = phoneNumber;
     }
 
-    Guest translateModelToGuest(){
+    Guest translateModelToGuest() {
         Guest guest = new Guest();
         guest.setFirstName(this.firstName);
         guest.setLastName(this.lastName);
