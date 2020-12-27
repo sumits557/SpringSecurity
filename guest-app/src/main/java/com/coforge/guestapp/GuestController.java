@@ -22,7 +22,7 @@ public class GuestController {
 
     private final GuestService guestService;
 
-    public GuestController(GuestService guestService){
+    public GuestController(GuestService guestService) {
         super();
         this.guestService = guestService;
     }

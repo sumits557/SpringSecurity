@@ -11,8 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-import static org.springframework.web.bind.annotation.RequestMethod.POST;
-
 /**
  * @author Sumit S.
  */
