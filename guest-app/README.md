@@ -5,3 +5,4 @@ Spring Security concepts
 - In memory authentication (In this we will not get the temp password in the logs as basic authentication but we will provide the credentials and it's roles there.)
 - JDBC authentication (In this we removed the user credentials from the code and authenticating from DB).
 - Leveraging bcrypt for hashing.
+- Authorization
