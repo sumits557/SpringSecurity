@@ -1,0 +1,51 @@
+dn: dc=sumitsharma,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: sumitsharma
+o: sumitsharma
+
+dn: ou=people,dc=sumitsharma,dc=com
+objectclass: top
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=sumitsharma,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=ssharma,ou=people,dc=sumitsharma,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Frank Moley
+sn: Moley
+givenName: Frank
+mail: ssharma@sumitsharma.com
+uid: ssharma
+userPassword: {SHA}W6ph5Mm5Pz8GgiULbPgzG37mj9g=
+
+dn: uid=sumits,ou=people,dc=sumitsharma,dc=com
+objectClass: inetOrgPerson
+cn: John Doe
+sn: Doe
+givenName: John
+mail: sumits@sumitsharma.com
+uid: sumits
+userPassword: {SHA}iEPX+SQWIR3p67lj/0zigSWTKHg=
+
+dn: cn=admin,ou=groups,dc=sumitsharma,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: admins
+uniqueMember: uid=ssharma,ou=people,dc=sumitsharma,dc=com
+
+dn: cn=user,ou=groups,dc=sumitsharma,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: users
+uniqueMember: uid=ssharma,ou=people,dc=sumitsharma,dc=com
+uniqueMember: uid=sumits,ou=people,dc=sumitsharma,dc=com
+
