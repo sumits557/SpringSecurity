@@ -1,21 +1,21 @@
-dn: dc=sumitsharma,dc=com
+dn: dc=frankmoley,dc=com
 objectclass: top
 objectclass: domain
 objectclass: extensibleObject
-dc: sumitsharma
-o: sumitsharma
+dc: frankmoley
+o: FrankMoley
 
-dn: ou=people,dc=sumitsharma,dc=com
+dn: ou=people,dc=frankmoley,dc=com
 objectclass: top
 objectClass: organizationalUnit
 ou: people
 
-dn: ou=groups,dc=sumitsharma,dc=com
+dn: ou=groups,dc=frankmoley,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: groups
 
-dn: uid=ssharma,ou=people,dc=sumitsharma,dc=com
+dn: uid=fpmoles,ou=people,dc=frankmoley,dc=com
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
@@ -23,29 +23,29 @@ objectclass: inetOrgPerson
 cn: Frank Moley
 sn: Moley
 givenName: Frank
-mail: ssharma@sumitsharma.com
-uid: ssharma
+mail: fpmoles@frankmoley.com
+uid: fpmoles
 userPassword: {SHA}W6ph5Mm5Pz8GgiULbPgzG37mj9g=
 
-dn: uid=sumits,ou=people,dc=sumitsharma,dc=com
+dn: uid=jdoe,ou=people,dc=frankmoley,dc=com
 objectClass: inetOrgPerson
 cn: John Doe
 sn: Doe
 givenName: John
-mail: sumits@sumitsharma.com
-uid: sumits
+mail: jdoe@frankmoley.com
+uid: jdoe
 userPassword: {SHA}iEPX+SQWIR3p67lj/0zigSWTKHg=
 
-dn: cn=admin,ou=groups,dc=sumitsharma,dc=com
+dn: cn=admin,ou=groups,dc=frankmoley,dc=com
 objectclass: top
 objectclass: groupOfUniqueNames
 cn: admins
-uniqueMember: uid=ssharma,ou=people,dc=sumitsharma,dc=com
+uniqueMember: uid=fpmoles,ou=people,dc=frankmoley,dc=com
 
-dn: cn=user,ou=groups,dc=sumitsharma,dc=com
+dn: cn=user,ou=groups,dc=frankmoley,dc=com
 objectclass: top
 objectclass: groupOfUniqueNames
 cn: users
-uniqueMember: uid=ssharma,ou=people,dc=sumitsharma,dc=com
-uniqueMember: uid=sumits,ou=people,dc=sumitsharma,dc=com
+uniqueMember: uid=fpmoles,ou=people,dc=frankmoley,dc=com
+uniqueMember: uid=jdoe,ou=people,dc=frankmoley,dc=com
 
