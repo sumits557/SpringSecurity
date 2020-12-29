@@ -3,7 +3,7 @@ package com.coforge.guestservices;
 import javax.persistence.*;
 
 /**
- * @author Frank P. Moley III.
+ * @author Sumit S.
  */
 @Entity
 @Table(name="GUEST")

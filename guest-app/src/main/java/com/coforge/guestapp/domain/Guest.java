@@ -1,7 +1,7 @@
 package com.coforge.guestapp.domain;
 
 /**
- * @author Frank P. Moley III.
+ * @author Sumit S.
  */
 public class Guest {
     private long id;

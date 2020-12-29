@@ -1,7 +1,7 @@
 package com.coforge.guestservices;
 
 /**
- * @author Frank P. Moley III.
+ * @author Sumit S.
  */
 public class GuestModel {
     private String firstName;

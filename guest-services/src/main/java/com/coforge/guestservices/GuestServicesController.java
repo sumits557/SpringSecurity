@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * @author Frank P. Moley III.
+ * @author Sumit S.
  */
 @RestController
 @RequestMapping("/guests")
