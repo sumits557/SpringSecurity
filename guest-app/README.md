@@ -7,3 +7,4 @@ Spring Security concepts
 - Leveraging bcrypt for hashing.
 - Authorization
 - Form-based authentication, Introduced html login-logout page.
+- LDAP for authentication, Configuring, implementing LDAP authentication.
