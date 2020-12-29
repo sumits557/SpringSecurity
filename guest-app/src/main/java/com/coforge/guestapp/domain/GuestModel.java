@@ -1,7 +1,7 @@
 package com.coforge.guestapp.domain;
 
 /**
- * @author Sumit S.
+ * @author Frank P. Moley III.
  */
 public class GuestModel {
     private String firstName;
@@ -68,7 +68,7 @@ public class GuestModel {
         this.phoneNumber = phoneNumber;
     }
 
-    Guest translateModelToGuest() {
+    Guest translateModelToGuest(){
         Guest guest = new Guest();
         guest.setFirstName(this.firstName);
         guest.setLastName(this.lastName);

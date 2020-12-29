@@ -9,8 +9,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-
 import java.util.List;
+
 
 /**
  * @author Sumit S.
@@ -20,10 +20,15 @@ public class GuestService {
     private static final String GUESTS = "/guests";
     private static final String SLASH = "/";
 
-    @Value("${atlanta.guest.service.url}")
+    @Value("${landon.guest.service.url}")
     private String guestServiceUrl;
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate;
+
+    public GuestService(RestTemplate restTemplate) {
+        super();
+        this.restTemplate = restTemplate;
+    }
 
     public List<Guest> getAllGuests(){
         String url = guestServiceUrl + GUESTS;

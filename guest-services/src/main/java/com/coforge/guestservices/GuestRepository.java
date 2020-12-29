@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author Sumit S.
+ * @author Frank P. Moley III.
  */
 @Repository
 public interface GuestRepository extends JpaRepository<Guest, Long> {
