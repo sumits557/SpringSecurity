@@ -13,7 +13,7 @@ public class AtlantaUserDetailsService  implements UserDetailsService {
     private final UserRepository userRepository;
     private final AuthGroupRepository authGroupRepository;
 
-    public AtlantaUserDetailsService(UserRepository userRepository, AuthGroupRepository authGroupRepository){
+    public AtlantaUserDetailsService(UserRepository userRepository, AuthGroupRepository authGroupRepository) {
         super();
         this.userRepository = userRepository;
         this.authGroupRepository = authGroupRepository;
