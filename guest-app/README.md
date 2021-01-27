@@ -7,3 +7,4 @@ Spring Security concepts
 - Leveraging bcrypt for hashing.
 - Authorization
 - Form-based authentication, Introduced html login-logout page.
+- User credentials(ssharma - password, sumits - foobar)
